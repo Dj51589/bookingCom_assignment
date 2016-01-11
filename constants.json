@@ -1,0 +1,215 @@
+/* near by hotels json */
+
+var markers = [{
+		    'title':'Citadines Suites Arc de Triomphe Paris',
+		    'lat':'48.9721349353',
+		    'lng':'7.18620637499',
+		    'rating':'5'
+		  },{
+		    'title':'Napoleon Paris',
+		    'lat':'49.258191085',
+		    'lng':'14.089926750',
+		    'rating':'5'
+		  },{
+		    'title':'Le Cinq Codet paris',
+		    'lat':'45.81852',
+		    'lng':'15.31647',
+		    'rating':'5'
+		  },{
+		    'title':'Prince de Galles',
+		    'lat':'51.77998547',
+		    'lng':'-1.3352979',
+		    'rating':'5'
+		  },{
+		    'title':'Angleterre Hotel  paris',
+		    'lat':'51.038276100',
+		    'lng':'10.705054874',
+		    'rating':'4'
+		  },{
+		    'title':'Hotel Prince Albert Louvre paris',
+		    'lat':'45.8508362',
+		    'lng':'9.73503449',
+		    'rating':'4'
+		  },{
+		    'title':'Hotel de la Place des Vosges',
+		    'lat':'43.6346396350',
+		    'lng':'1.04739862500',
+		    'rating':'4'
+		  },{
+		    'title':'Hotel Oasis Montparnasse',
+		    'lat':'51.97272682',
+		    'lng':'8.311949499',
+		    'rating':'3'
+		  },{
+		    'title':'Saint-Petersbourg Opera',
+		    'lat':'47.952256285',
+		    'lng':'-2.70148893',
+		    'rating':'3'
+		  },{
+		    'title':'Median Paris Porte de Versailles',
+		    'lat':'41.042272497',
+		    'lng':'-5.62238524',
+		    'rating':'3'
+		  },{
+		    'title':'Hotel Alhambra',
+		    'lat':'54.84422592',
+		    'lng':'-2.70148893',
+		    'rating':'2'
+		  },{
+		    'title':'Montparnasse Daguerre',
+		    'lat':'45.056802192',
+		    'lng':'5.7554033750',
+		    'rating':'1'
+		  }];
+
+/* similar hotels json */
+var similarHotels = [
+	{
+		"name":"Citadines Suites Arc de Triomphe Paris",
+		"url":"Citadines",
+		"img":"Citadines.jpg",
+		"rating":5,
+		"price":100
+	}, {
+		"name":"Napoleon Paris",
+		"url":"Napoleon",
+		"img":"Napoleon.jpg",
+		"rating":5,
+		"price":120
+	}, {
+		"name":"Le Cinq Codet",
+		"url":"Le-Cinq",
+		"img":"lecinq.jpg",
+		"rating":4,
+		"price":130
+	}, {
+		"name":"Prince de Galles",
+		"url":"Prince-de",
+		"img":"prince.jpg",
+		"rating":4,
+		"price":140
+	}
+];
+
+/* reviews Json */
+var reviewJson = [{
+	reviewScore:5,
+	reviewContent:'Pellentesque ligula nibh, lacinia eget pharetra ut, vulputate vitae odio. Donec non mattis nisi. Pellentesque elit leo, tincidunt nec felis vitae, aliquet imperdiet purus. In elit ante, vestibulum non accumsan at, volutpat eget dolor. Quisque ut tincidunt elit. Curabitur rutrum dignissim enim ac aliquet. Curabitur et aliquam nisl.',
+	author:'Malcolm Reynolds'
+},{
+	reviewScore:8,
+	reviewContent:'Duis ac nisi id lorem rhoncus tempus eu sit amet nisi. Aenean ultrices congue ligula, ac molestie velit ultricies a. Nulla ac nunc et nisi placerat interdum sit amet ut erat. Integer vulputate nulla id orci cursus, eget ullamcorper justo ultricies. Nulla lorem dui, euismod non porttitor eu, sagittis in lacus. In suscipit lectus non viverra luctus. Pellentesque egestas, dolor at luctus eleifend, velit dui viverra risus, ac rutrum sapien ante at massa. Donec imperdiet consequat laoreet.',
+	author:'Zoe Washburne'
+},{
+	reviewScore:3,
+	reviewContent:'Etiam posuere, magna sit amet ullamcorper auctor, odio urna tempor velit, sit amet tincidunt lorem diam a velit. Integer a dapibus nunc. In iaculis vel sem ut gravida.',
+	author:'Hoban Washburne'
+},{
+	reviewScore:5,
+	reviewContent:'Pellentesque ligula nibh, lacinia eget pharetra ut, vulputate vitae odio. Donec non mattis nisi. Pellentesque elit leo, tincidunt nec felis vitae, aliquet imperdiet purus. In elit ante, vestibulum non accumsan at, volutpat eget dolor. Quisque ut tincidunt elit. Curabitur rutrum dignissim enim ac aliquet. Curabitur et aliquam nisl.',
+	author:'Malcolm Reynolds'
+},{
+	reviewScore:10,
+	reviewContent:'Etiam condimentum sodales dui in vestibulum. Vivamus euismod egestas porttitor. Proin dictum tempor euismod. Suspendisse elit nulla, elementum eu ornare in, tempus in massa. Proin elit sem, posuere nec tempor eget, suscipit sit amet dui. Aliquam in vehicula lorem. Praesent vitae vestibulum ante, nec vestibulum metus. Morbi commodo diam in leo semper ornare. Phasellus et diam magna.',
+	author:'Inara Serra'
+},{
+	reviewScore:9,
+	reviewContent:'Maecenas cursus ut erat vitae vestibulum. Fusce feugiat dignissim augue consequat condimentum. Donec risus felis, ultricies a velit sed, varius ullamcorper enim. Suspendisse ultrices non tortor non lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	author:'Jayne Cobb'
+},{
+	reviewScore:4,
+	reviewContent:'Donec adipiscing lacus sed neque cursus ullamcorper. Vestibulum tellus lectus, molestie vitae augue et, egestas convallis mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor mi vitae mauris aliquam, non accumsan odio tincidunt. Aliquam semper enim quam, ac cursus lectus dignissim vitae. Suspendisse nec rutrum ligula.',
+	author:'Kaylee Frye'
+},{
+	reviewScore:7,
+	reviewContent:'Nullam et leo placerat lectus fringilla varius vel a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh eros, blandit at aliquam eu, ullamcorper eu diam. Etiam id viverra lacus, rutrum suscipit nulla. Maecenas adipiscing, mi sit amet iaculis congue, urna massa vestibulum tortor, a tempus nibh tortor id dui.',
+	author:'Simon Tam'
+},{
+	reviewScore:2,
+	reviewContent:'Maecenas semper, orci eget cursus aliquam, orci tellus sodales urna, nec varius nisi arcu gravida velit. Proin ultrices egestas nunc, eget dapibus erat sollicitudin in. Fusce fermentum dignissim ipsum sollicitudin tincidunt. Aliquam erat volutpat. Suspendisse in ornare ante.',
+	author:'River Tam'
+},{
+	reviewScore:10,
+	reviewContent:'Nullam purus ante, rhoncus ac malesuada at, bibendum nec urna. Cras lobortis viverra feugiat. Praesent sapien elit, sagittis vel orci sed, congue consequat nulla.',
+	author:'Derrial Book'
+},{
+	reviewScore:9,
+	reviewContent:'Donec malesuada semper lectus sed sagittis. Sed laoreet consectetur tortor, ac tempus ipsum malesuada non. Aenean dapibus leo sed sapien rhoncus, at dapibus ligula porta. Morbi tincidunt, urna eget ullamcorper aliquam, augue lectus placerat orci, tristique aliquet ipsum nisi id orci. Nulla vulputate lectus justo, eu dapibus lectus sodales ac. Donec volutpat nibh mi. Proin eu justo vitae dolor accumsan ultrices vel non ante.',
+	author:'Sheriff Bourne'
+},{
+	reviewScore:3,
+	reviewContent:'Sed consectetur, lorem vitae laoreet tempus, neque elit fringilla nisl, nec tempus urna quam eu nulla. Nunc tempor nec magna vel viverra. In dapibus aliquam velit, ut malesuada nibh ornare eget. Suspendisse in risus posuere, hendrerit odio id, tincidunt lacus. Nunc fermentum metus sit amet mauris pellentesque, vitae sollicitudin dui facilisis. Etiam at velit id dolor rhoncus porttitor. Vestibulum quis blandit felis.',
+	author:'Lawrence Dobson'
+},{
+	reviewScore:7,
+	reviewContent:'Suspendisse in risus posuere, hendrerit odio id, tincidunt lacus. Nunc fermentum metus sit amet mauris pellentesque, vitae sollicitudin dui facilisis. Etiam at velit id dolor rhoncus porttitor. Vestibulum quis blandit felis.',
+	author:'Jubal Early'
+},{
+	reviewScore:8,
+	reviewContent:'Phasellus venenatis tortor ac lectus dapibus, sit amet pellentesque turpis mollis. Nam laoreet magna non leo facilisis auctor. Fusce neque augue, lobortis eget orci vel, lobortis porta lectus. Fusce venenatis, metus quis accumsan auctor, ipsum lectus volutpat tellus, viverra vulputate risus dolor porta lacus',
+	author:'Fanty and Mingo'
+},{
+	reviewScore:1,
+	reviewContent:'Sed molestie ipsum ac diam feugiat tempus. Donec sed mi tortor. Donec dolor augue, tincidunt sed dignissim ac, congue ac sapien. Morbi molestie nibh eget neque rutrum tincidunt. Quisque adipiscing pulvinar massa eu laoreet. Aenean ipsum nisl, convallis eget tortor nec, convallis consequat tellus.',
+	author:'Stitch Hessian'
+},{
+	reviewScore:10,
+	reviewContent:'Etiam porttitor ut massa sit amet pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur facilisis commodo nulla ut laoreet. Integer vel felis sit amet dolor sollicitudin gravida. Nam quis congue lorem. Aenean quis purus leo. Nunc iaculis enim odio, eu feugiat augue porta sit amet. Fusce quis commodo nisl. Nunc laoreet leo vel egestas volutpat. Suspendisse et cursus leo.',
+	author:'Fess Higgins'
+},{
+	reviewScore:9,
+	reviewContent:'Nunc vel suscipit mi. Morbi semper diam urna, sit amet elementum turpis egestas nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet mi at dui blandit accumsan. Aliquam laoreet enim vel volutpat fermentum. Etiam feugiat arcu mi, sed blandit magna dictum vitae. Ut tristique id nunc ut molestie. Curabitur et augue rhoncus, consectetur mauris vel, laoreet sapien.',
+	author:'Magistrate Higgins'
+},{
+	reviewScore:6,
+	reviewContent:'Mauris in ligula quis orci auctor blandit. Maecenas venenatis quis mi vitae sagittis. Sed tincidunt laoreet mi nec ullamcorper. Pellentesque elementum ut lacus ac iaculis. Sed suscipit ipsum ut bibendum ullamcorper. Cras ac est risus. Praesent in risus velit. Donec placerat hendrerit nibh vitae auctor.',
+	author:'Dr. Mathias'
+},{
+	reviewScore:8,
+	reviewContent:'Sed ut ipsum in tellus tristique venenatis quis sit amet nibh. Phasellus pretium eget est ac consequat. Vivamus accumsan semper dui, nec vestibulum mauris rutrum sollicitudin. Mauris quis lorem fermentum, dignissim eros faucibus, tempor justo. Donec nec interdum risus.',
+	author:'Adelei Niska'
+},{
+	reviewScore:9,
+	reviewContent:'Sed felis erat, laoreet vitae tincidunt non, interdum et elit. Nunc sit amet malesuada lorem. Suspendisse sagittis nulla quis elit pulvinar accumsan. Sed massa nibh, consequat ut mi in, consectetur pharetra nisl. Proin adipiscing semper quam, eget vestibulum risus pharetra ut. Ut sed elit neque.',
+	author:'Tracey Smith'
+},{
+	reviewScore:4,
+	reviewContent:'Nam sit amet elit in nibh faucibus bibendum sed quis metus. Vivamus aliquam orci sed porta rhoncus. Mauris aliquam purus ut gravida gravida. Mauris sit amet quam enim. Aenean fringilla sed ligula luctus adipiscing. Donec ac augue tortor. In ultricies luctus nulla.',
+	author:'Atherton Wing'
+},{
+	reviewScore:3,
+	reviewContent:'Mauris id adipiscing justo, eget volutpat mauris. Sed lorem ligula, fermentum at interdum eu, pulvinar vel felis. Aliquam malesuada eros augue, at sollicitudin urna accumsan ultrices.',
+	author:'Monty'
+},{
+	reviewScore:6,
+	reviewContent:'Sed urna est, sagittis eu ligula sit amet, pellentesque lacinia velit. Sed imperdiet enim non risus bibendum semper. Curabitur gravida consequat magna, nec lobortis elit pretium nec. Morbi eget lacus eget ipsum vehicula pharetra. Donec vehicula aliquam euismod. Nulla facilisi. Donec non est nec eros volutpat placerat in et massa.',
+	author:'Lenore'
+},{
+	reviewScore:2,
+	reviewContent:'Aliquam scelerisque ullamcorper vehicula. Aenean ut aliquam mi, nec faucibus tortor. Aliquam erat volutpat. Pellentesque et pellentesque mi. Aenean sem neque, cursus lacinia lectus in, egestas aliquet lorem. Sed aliquam, dolor in hendrerit fringilla, dui arcu pulvinar orci, non suscipit urna nibh id odio.',
+	author:'Mr. Universe'
+},{
+	reviewScore:8,
+	reviewContent:'Morbi vel nisi vel nibh rhoncus vestibulum non sagittis nisl. Curabitur varius dolor massa, ut pulvinar mauris blandit a. Phasellus vestibulum arcu turpis, ut consequat risus sagittis ut. Proin non elit sit amet magna lacinia molestie. Sed eget vulputate augue. In hac habitasse platea dictumst. Cras imperdiet leo nec ante dapibus, in mollis risus interdum. Nullam pharetra nibh eu diam tempus, eget lobortis metus vulputate.',
+	author:'Sir Warwick Harrow'
+},{
+	reviewScore:9,
+	reviewContent:'Curabitur quis augue cursus, cursus massa ac, dapibus magna. Curabitur non sapien vel lorem pellentesque rhoncus. Nam sagittis, metus aliquet malesuada egestas, leo purus cursus turpis, tempor pharetra tellus nibh posuere turpis. Cras viverra, nisi eget ornare suscipit, erat velit facilisis elit, quis interdum justo magna a tortor. Donec condimentum quam id felis sollicitudin porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
+	author:'Simon Tam'
+},{
+	reviewScore:10,
+	reviewContent:'Quisque eros sapien, tempus vel ullamcorper nec, faucibus eget ante. Curabitur vel velit ac libero tempus fringilla in dignissim ligula. Integer eget laoreet ligula, eget ultricies ligula. Donec convallis augue a dolor sagittis feugiat. Aliquam adipiscing, ipsum eget pulvinar pulvinar, elit nisl vestibulum ligula, id interdum felis sem quis mi. Sed vel leo nisl. Sed consequat pharetra diam, vitae ultrices augue varius ac.',
+	author:'Dr. Caron'
+},{
+	reviewScore:8,
+	reviewContent:'Etiam elementum at est sit amet sagittis. Curabitur euismod tellus leo, vitae porta justo ultricies vitae. Aliquam posuere nunc sit amet mauris interdum lacinia',
+	author:'Bridget'
+},{
+	reviewScore:7,
+	reviewContent:'Uspendisse mollis leo et nisl laoreet, a molestie justo consectetur. Aliquam et leo vulputate, tincidunt massa vel, volutpat leo. Suspendisse potenti.',
+	author:'Bester'
+},{
+	reviewScore:8,
+	reviewContent:'non convallis enim porttitor. Nulla ut fermentum sem. Aliquam tincidunt, dui malesuada venenatis pulvinar, justo tellus tempus nulla, sit amet pretium orci metus sed purus. Phasellus lobortis cursus lacus vitae volutpat. Nulla at velit ut orci varius placerat. Aenean est elit, adipiscing et nunc varius, accumsan tempus magna. Donec consectetur orci nec mattis hendrerit.',
+	author:'Badger'
+}];

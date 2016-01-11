@@ -1,0 +1,35 @@
+Task Details
+==================================================
+Below is my priority list for tasks with reasons:
+
+1. Add an interactive location block to the page. It should contain a map and some nearby landmarks.
+Reason : Location plays a very important role to shortlist any hotel and map is a very nice ui component that let the user know about the exact location with it's near by landmark. So select it first.
+
+2. Imagine there is a JSON feed with hotels similar to the current one. Design JSON format and use the feed to display similar hotels on the page.
+Reason : I think user also looks with similar hotels with searched one so that he can compare different stuffs.
+
+3. Create a photo carousel.
+Reason : It impacts your page. It conatins your photos in a slider with animations and give a eye friendly look, also beautify your page, so i've done this. I choose it as last becuase i knew it will take more time than earlier ones.
+
+4. Split the reviews into blocks of 5 and create pagination. Allow the user to sort the reviews by review score.
+Reason : I think it was the important section on which user select a hotel. Some time price doesn't matter to go with hotel rather than it's reviews, so i decided to do it must. And from developer wise, it reuired logics to create sorting and pagination both in a single task so it was also a reason to do it.
+Reason to decide to do it at last because of it's time taken logic.
+
+
+I've completed 4 tasks here.
+1. Added map with near by localities.
+2. Similar Hotels.
+3. Created photos carousel.
+4. Splited the reviews into blocks of 5 and create pagination. Also giving option to sort the review.
+
+=================================================
+
+Files that i've created:
+
+Constants.json : contains some static json data to be used to bind hotels, localities and more.
+js.js : contains bussiness logic of application.
+css.css: added some own css code there.
+
+
+Note: Used javascript to create application. Used jquery to create carousel only. 
+Avoided jquery plugins as mentioned in the task.
