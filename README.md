@@ -1,4 +1,4 @@
-#Overview
+## Overview
 
 This assignment is designed to test your client-side coding skills and show us
 what you’re good at! You can add or modify any of the JavaScript, HTML and CSS
