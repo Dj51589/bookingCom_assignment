@@ -1,3 +1,5 @@
+#Overview
+
 This assignment is designed to test your client-side coding skills and show us
 what you’re good at! You can add or modify any of the JavaScript, HTML and CSS
 to complete the assignment. JQuery has been included for your convenience, but
@@ -13,7 +15,11 @@ Second, pick at least two tasks out of the list and implement them. You may choo
 whatever tasks you prefer that you think will best reflect your coding skills.
 Browser support should include IE8+, Chrome, Safari, FF.
 
-Tasks
+## Demo
+
+https://bookingcom.herokuapp.com/
+
+## Tasks
 ========================================
 
  *  Imagine there is a JSON feed with hotels similar to the current one.
